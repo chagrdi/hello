@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background-color: #0400ff;
+  background-color: #d1d1d1;
 }
 
 .liste {
@@ -12,9 +12,17 @@ header {
   margin: auto;
 }
 
+.display-1 {
+  color: #ffff;
+}
+
+.display-4 {
+  color: #ffff;
+}
+
 .slider {
   height: 100vh;
-  background-color: #007506;
+  background-color: #ffff;
 }
 
 .bd-example {
@@ -25,16 +33,16 @@ header {
 }
 
 .jeux {
-  background-color: #f00;
+  background-color: #e7e7e7;
 }
 
 .cards {
   display: flex;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .card {
-  margin: auto;
+  margin: 0 26px 0 0;
 }
 
 .card .card-text {
