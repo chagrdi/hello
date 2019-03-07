@@ -1,9 +1,46 @@
 header {
   height: 100vh;
-  background-color: blue;
+  background-color: #0400ff;
+}
+
+.liste {
+  padding-top: 10%;
+}
+
+.list-group-item {
+  width: 300px;
+  margin: auto;
+}
+
+.slider {
+  height: 100vh;
+  background-color: #007506;
+}
+
+.bd-example {
+  width: 650px;
+  height: 400px;
+  margin: auto;
+  padding-top: 12%;
 }
 
 .jeux {
-  height: 100vh;
-  background-color: red;
+  background-color: #f00;
+}
+
+.cards {
+  display: flex;
+  padding-top: 5%;
+}
+
+.card {
+  margin: auto;
+}
+
+.card .card-text {
+  font-size: 9px;
+}
+
+.card .card-title {
+  font-size: 16px;
 }

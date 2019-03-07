@@ -1,9 +1,65 @@
+//* COULEUR DE BASE *//
+
+$bleu: #0400ff;
+$vert: #007506;
+$rouge: #ff0000;
+
+//* PREMIER ECRAN *//
+
 header{
     height: 100vh;
-    background-color: blue;
+    background-color: $bleu;
 }
 
-.jeux{
-    height: 100vh;
-    background-color: red;
+.liste{
+    padding-top: 10%;
 }
+
+.list-group-item{
+    width: 300px;
+    margin: auto;
+}
+
+
+//* FIN PREMIER ECRAN *//////////////////////////////////
+
+
+//* DEUXIEME ECRAN *//
+
+.slider{
+    height: 100vh;
+    background-color: $vert;
+}
+.bd-example{
+    height: 400px;
+    width: 650px;
+    margin: auto;
+    padding-top: 12%;
+}
+
+//* FIN DEUXIEME ECRAN *//////////////////////////////////
+
+
+//* DERNIER ECRAN *//
+
+.jeux{
+    background-color: $rouge;
+}
+
+.cards{
+    display: flex;
+    padding-top: 5%;
+}
+
+.card{
+    margin: auto;
+    .card-text{
+        font-size: 9px;
+    }
+    .card-title{
+        font-size: 16px;
+    }
+
+}
+
+//* FIN DERNIER ECRAN *//////////////////////////////////
