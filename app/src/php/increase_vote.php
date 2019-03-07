@@ -13,6 +13,6 @@ $nb_votes = $nb_votes["nb_votes"] +1;
 
 var_dump($nb_votes);
 
-$q = $db->prepare("UPDATE");
+$q = $db->prepare("UPDATE vote SET nb_votes = :nb_votes WHERE slug_games = :game");
 
 ?>
