@@ -16,4 +16,4 @@ $q->bindParam(":nb_votes", $nb_votes);
 $q->bindParam(":game", $_GET["game"]);
 $q->execute();
 
-header('Location: index.php');
+header('Location: getAllGame.php');

@@ -15,8 +15,4 @@ $data = $q->fetch(PDO::FETCH_ASSOC);
 
 echo $data["nb_votes"] . " Votes";
 
-
-
-
-
 ?>
