@@ -1,6 +1,19 @@
 <?php
+$value = 'something from somewhere';
+setcookie("TestCookie", $value, time() + 6);
+?>
+
+
+
+<?php
+
 // Connect to database
 $db = new PDO('mysql:host=localhost;dbname=jeu-arcade', 'root', 'root');
+
+if (isset($_COOKIE["TestCookie"])){
+    echo "tu ne peux plus voter";
+}
+
 
 // Reques to to database (get nb_vote)
 $q = $db->prepare("SELECT * FROM votes WHERE slug_game = :game");
@@ -16,4 +29,16 @@ $q->bindParam(":nb_votes", $nb_votes);
 $q->bindParam(":game", $_GET["game"]);
 $q->execute();
 
-header('Location: getAllGame.php');
+$db = new PDO('mysql:host=localhost;dbname=jeu-arcade', 'root', 'root');
+
+$q = $db->query("SELECT * FROM votes");
+$q->execute();
+
+
+while($vote = $q->fetch(PDO::FETCH_ASSOC)){
+    echo $vote["slug_game"] . "<br>";
+    echo $vote["nb_votes"] . " Votes <br>";
+    echo "<a href='increase_vote.php?game=". $vote["slug_game"] . "'>Voter</a> <br>";
+   
+}
+

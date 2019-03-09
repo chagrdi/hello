@@ -1,14 +1,15 @@
 //* COULEUR DE BASE *//
 
-$bleu: #0400ff;
-$vert: #007506;
-$rouge: #ff0000;
+$grisfonce: #d1d1d1;
+$grisclair: #d1d1d160;
+$rouge: #e7e7e7;
+$blanc: #ffff;
 
 //* PREMIER ECRAN *//
 
 header{
     height: 100vh;
-    background-color: $bleu;
+    background-color: $grisfonce;
 }
 
 .liste{
@@ -20,6 +21,12 @@ header{
     margin: auto;
 }
 
+.display-1{
+    color: $blanc;
+}
+.display-4{
+    color: $blanc;
+}
 
 //* FIN PREMIER ECRAN *//////////////////////////////////
 
@@ -28,7 +35,7 @@ header{
 
 .slider{
     height: 100vh;
-    background-color: $vert;
+    background-color: $blanc;
 }
 .bd-example{
     height: 400px;
@@ -48,11 +55,11 @@ header{
 
 .cards{
     display: flex;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .card{
-    margin: auto;
+    margin: 0 26px 0 0px;
     .card-text{
         font-size: 9px;
     }

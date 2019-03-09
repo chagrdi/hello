@@ -1,7 +1,10 @@
 <a href="increase_vote.php?game=macron">Voter</a>
+
 <br>
 
 <?php
+
+
 $game = "macron";
 // Connect to database
 $db = new PDO('mysql:host=localhost;dbname=jeu-arcade', 'root', 'root');
