@@ -58,3 +58,4 @@ while($vote = $q->fetch(PDO::FETCH_ASSOC)){
    
 }
 
+header('Location: ../../index.html');
