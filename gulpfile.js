@@ -3,8 +3,7 @@ var gulp = require('gulp');
 
 // Include plugins
 var plugins = require('gulp-load-plugins')(); // tous les plugins de package.json
-var browserSync = require('browser-sync');
-var connect = require('gulp-connect-php');
+var browserSync = require('browser-sync').create();
 
 // Variables de chemins
 var source = './app/src'; // dossier de travail
@@ -38,7 +37,7 @@ gulp.task('build', ['sass']);
 gulp.task('prod', ['build',  'minify']);
 
 // Tâche par défaut
-gulp.task('default', ['connect-sync', 'build']);
+gulp.task('default', ['build']);
 
 
 // Tâche "watch" = je surveille *scss
@@ -46,15 +45,10 @@ gulp.task('default', ['connect-sync', 'build']);
 //     gulp.watch(source + '/assets/sass/*.scss', ['build']);
 //   });
 
-  gulp.task('serve', ['sass'],function() {
-    return connect.server({}, function (){
-        browserSync({
-            proxy: 'localhost:8000'
-        });
+  gulp.task('serve', ['sass'], function() {
+    browserSync.init({
+        server: "./app"
     });
     gulp.watch(source + "/assets/sass/*.scss", ['sass']);
-    gulp.watch("app/*.php").on('change', browserSync.reload);
+    gulp.watch("app/*.html").on('change', browserSync.reload);
 });
-
-
-

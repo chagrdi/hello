@@ -1,5 +1,6 @@
+
+
 <a href="cookies.php?game=macron">Voter</a>
-<h1>oui bonjour</h1>
 <br>
 
 <?php
