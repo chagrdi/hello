@@ -76,94 +76,6 @@ h6 {
   font-weight: 800;
 }
 
-/* Side Menu */
-#sidebar-wrapper {
-  position: fixed;
-  z-index: 2;
-  right: 0;
-  width: 250px;
-  height: 100%;
-  transition: all .4s ease 0s;
-  -webkit-transform: translateX(250px);
-          transform: translateX(250px);
-  border-left: 1px solid rgba(255, 255, 255, .1);
-  background: #1d809f;
-}
-
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sidebar-nav li.sidebar-nav-item a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, .2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-  font-size: 1.2rem;
-  line-height: 50px;
-  height: 80px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  background: rgba(52, 58, 64, .1);
-}
-
-.sidebar-nav > .sidebar-brand a {
-  color: #fff;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
-}
-
-#sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
-  transition: all .4s ease 0s;
-}
-
-.menu-toggle {
-  line-height: 50px;
-  position: fixed;
-  z-index: 999;
-  top: 15px;
-  right: 15px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  color: #fff;
-  background: rgba(52, 58, 64, .5);
-}
-
-.menu-toggle:focus,
-.menu-toggle:hover {
-  color: #fff;
-}
-
-.menu-toggle:hover {
-  background: #343a40;
-}
-
 .service-icon {
   font-size: 2.25rem;
   line-height: 7.5rem;
@@ -254,7 +166,7 @@ h6 {
   min-height: 30rem;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .1) 100%), url('../../../src/assets/img/bg-masthead.jpg');
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .1) 100%), url('../../../src/assets/img/arcade-back.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -264,6 +176,7 @@ h6 {
   font-size: 4rem;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 @media (min-width: 992px) {
@@ -273,6 +186,7 @@ h6 {
 
   .masthead h1 {
     font-size: 5.5rem;
+    color: white;
   }
 }
 
@@ -300,7 +214,7 @@ h6 {
 
 .jeux {
   padding-bottom: 40px;
-  background-color: black;
+  background-color: rgba(235, 235, 235, .267);
 }
 
 .cards {
@@ -442,7 +356,7 @@ footer.footer .social-link:hover {
 
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .1) 100%), url('../../../src/assets/img/bg-callout.jpg');
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .1) 100%), url('../../../src/assets/img/arcade-night.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -453,6 +367,7 @@ footer.footer .social-link:hover {
   font-weight: 700;
   display: block;
   max-width: 30rem;
+  color: white;
 }
 
 a {
