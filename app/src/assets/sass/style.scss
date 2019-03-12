@@ -1,29 +1,8 @@
-//* COULEUR DE BASE *//
-
-$grisfonce: #d1d1d1;
-$grisclair: #d1d1d160;
-$rouge: #e7e7e7;
-$blanc: #ffff;
-
-//* PREMIER ECRAN *//
-
-.pacman{
-    background-image: url("../../../src/assets/img/source.gif");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    height: 100px;
-    background-position:center;
-}
-
 .p-vote{
     font-weight: bold;
     margin-bottom: 2px;
 }
 
-
-header{
-    background-color: black;
-}
 
 .liste{
     padding-top: 10%;
@@ -35,25 +14,17 @@ header{
 }
 
 .display-1{
-    color: $blanc;
+    color: white;
 }
 .display-4{
-    color: $blanc;
+    color: white;
 }
 
 
 
 //* FIN PREMIER ECRAN *//////////////////////////////////
 
-//* DERNIER ECRAN *//
 
-.arca{
-  background-image: url("../../../src/assets/img/fight.gif");
-  background-repeat: no-repeat;
-  background-size: 40%;
-  height: 400px;
-  background-position:center;
-}
 
 .jeux{
     background-color: black;

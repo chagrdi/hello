@@ -1,18 +1,6 @@
-.pacman {
-  height: 100px;
-  background-image: url('../../../src/assets/img/source.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
-}
-
 .p-vote {
   font-weight: bold;
   margin-bottom: 2px;
-}
-
-header {
-  background-color: black;
 }
 
 .liste {
@@ -25,19 +13,11 @@ header {
 }
 
 .display-1 {
-  color: #ffff;
+  color: white;
 }
 
 .display-4 {
-  color: #ffff;
-}
-
-.arca {
-  height: 400px;
-  background-image: url('../../../src/assets/img/fight.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40%;
+  color: white;
 }
 
 .jeux {
