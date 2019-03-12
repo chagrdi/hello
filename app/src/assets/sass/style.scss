@@ -7,6 +7,14 @@ $blanc: #ffff;
 
 //* PREMIER ECRAN *//
 
+.pacman{
+    background-image: url("../../../src/assets/img/source.gif");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100px;
+    background-position:center;
+}
+
 .p-vote{
     font-weight: bold;
     margin-bottom: 2px;
@@ -54,8 +62,12 @@ header{
 
 .slider{
     height: 100vh;
-    background-color: $blanc;
+    background-image: url("../../../src/assets/img/giphy.gif");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
 .bd-example{
     height: 400px;
     width: 650px;
@@ -67,6 +79,14 @@ header{
 
 
 //* DERNIER ECRAN *//
+
+.arca{
+  background-image: url("../../../src/assets/img/fight.gif");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  height: 400px;
+  background-position:center;
+}
 
 .jeux{
     background-color: black;
