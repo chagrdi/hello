@@ -22,7 +22,6 @@ $blanc: #ffff;
 
 
 header{
-    height: 100vh;
     background-color: black;
 }
 
@@ -42,17 +41,6 @@ header{
     color: $blanc;
 }
 
-.premier{
-  img{
-    position: relative;
-    margin-left: 5%;
-  }
-}
-.btn-fond{
-  position: absolute;
-  margin-left: 35%;
-  margin-top: -10%;
-}
 
 
 //* FIN PREMIER ECRAN *//////////////////////////////////
