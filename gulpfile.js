@@ -52,3 +52,4 @@ gulp.task('default', ['build']);
     gulp.watch(source + "/assets/sass/*.scss", ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
 });
+

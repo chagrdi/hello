@@ -1,3 +1,347 @@
+@import "variables";
+@import "mixins";
+@import "global";
+@import "masthead";
+@import "sidebar";
+@import "services";
+@import "callout";
+@import "portfolio";
+@import "footer";
+@import "bootstrap-overrides";
+
+// Variables
+
+// Restated Bootstrap Variables
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: #1D809F !default;
+$secondary: #ecb807 !default;
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @include body-font;
+}
+
+// Custom Button Size
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+// Content Section
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.content-section-heading {
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.text-faded {
+  color: fade-out($white, 0.3);
+}
+
+/* Map */
+
+.map {
+  height: 30rem;
+}
+
+@media(max-width: 992px) {
+  .map {
+    height: 75%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}
+
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  display: none;
+
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+
+  color: white;
+  background: fade-out($gray-800, .5);
+
+  line-height: 45px;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  i {
+    font-weight: 800;
+  }
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  transform: translateX(250px);
+  background: $primary;
+  border-left: 1px solid fade-out($white, 0.9);
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  display: block;
+  text-decoration: none;
+  color: $white;
+  padding: 15px;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, .2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  font-size: 1.2rem;
+  background: fade-out($gray-800, .9);
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: $white;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+
+  color: $white;
+  background: fade-out($gray-800, .5);
+
+  line-height: 50px;
+
+  z-index: 999;
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  &.active {
+    // background-color: $white;
+    // color: $gray-900;
+  }
+}
+// icons
+
+.service-icon {
+  background-color: $white;
+  color: $primary;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+// portfolio
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+  .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: fade-out($gray-900, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    .caption-content {
+      color: $white;
+      margin: auto 2rem 2rem;
+      h2 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  @media(min-width: 992px) {
+    max-width: none;
+    margin: 0;
+    .caption {
+      -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+      -webkit-clip-path: inset(0px);
+      clip-path: inset(0px);
+      .caption-content {
+        transition: opacity 0.25s;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+      }
+    }
+    img {
+      -webkit-transition: -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(-1px);
+      clip-path: inset(-1px);
+    }
+    &:hover {
+      img {
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem);
+      }
+      .caption {
+        background-color: fade-out($primary, 0.1);
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem);
+      }
+    }
+  }
+}
+
+// mixins
+// Mixins
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Font Mixins
+@mixin body-font {
+  font-family: 'Source Sans Pro';
+}
+
+//hearder
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../../../src/assets/img/bg-masthead.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: 992px) {
+    height: 100vh;
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
+}
+
+
 .p-vote{
     font-weight: bold;
     margin-bottom: 2px;
@@ -132,3 +476,97 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+
+  // footer
+
+  footer.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .social-link {
+      display: block;
+      height: 4rem;
+      width: 4rem;
+      line-height: 4.3rem;
+      font-size: 1.5rem;
+      background-color: $primary;
+      transition: background-color 0.15s ease-in-out;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: darken($primary, 10%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Callout
+.callout {
+  padding: 15rem 0;
+  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../../../src/assets/img/bg-callout.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+    max-width: 30rem;
+  }
+}
+
+
+// en plus
+
+a {
+  color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary, 10%);
+  }
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  color: $white !important;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($primary, 10%) !important;
+    border-color: darken($primary, 10%) !important;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary !important;
+  border-color: $secondary !important;
+  color: $white !important;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($secondary, 10%) !important;
+    border-color: darken($secondary, 10%) !important;
+  }
+}
+
+.btn-dark {
+  color: $white !important;
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
