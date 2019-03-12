@@ -44,21 +44,6 @@ header {
   margin-left: 35%;
 }
 
-.slider {
-  height: 100vh;
-  background-image: url('../../../src/assets/img/giphy.gif');
-  background-repeat: no-repeat;
-  background-position: cover;
-  background-size: 100%;
-}
-
-.bd-example {
-  width: 650px;
-  height: 400px;
-  margin: auto;
-  padding-top: 12%;
-}
-
 .arca {
   height: 400px;
   background-image: url('../../../src/assets/img/fight.gif');
