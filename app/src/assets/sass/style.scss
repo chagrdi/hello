@@ -15,7 +15,7 @@ $blanc: #ffff;
 
 header{
     height: 100vh;
-    background-color: $grisfonce;
+    background-color: black;
 }
 
 .liste{
@@ -33,6 +33,19 @@ header{
 .display-4{
     color: $blanc;
 }
+
+.premier{
+  img{
+    position: relative;
+    margin-left: 5%;
+  }
+}
+.btn-fond{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -10%;
+}
+
 
 //* FIN PREMIER ECRAN *//////////////////////////////////
 
@@ -56,21 +69,27 @@ header{
 //* DERNIER ECRAN *//
 
 .jeux{
-    background-color: $rouge;
+    background-color: black;
+    padding-bottom: 40px;
 }
 
 .cards{
     display: flex;
     padding-top: 2%;
+    justify-content: center;
+
 }
 
 .card{
     margin: 0 26px 0 0px;
-    .card-text{
-        font-size: 9px;
-    }
+    
     .card-title{
         font-size: 16px;
+        text-align: center;
+    }
+    .card-body{
+      text-align: center;
+      justify-content: center;
     }
 
 }
