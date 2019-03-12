@@ -1,15 +1,4 @@
-@import "variables";
-@import "mixins";
-@import "global";
-@import "masthead";
-@import "sidebar";
-@import "services";
-@import "callout";
-@import "portfolio";
-@import "footer";
-@import "bootstrap-overrides";
 
-// Variables
 
 // Restated Bootstrap Variables
 
@@ -34,9 +23,6 @@ html {
   height: 100%;
 }
 
-body {
-  @include body-font;
-}
 
 // Custom Button Size
 .btn-xl {
