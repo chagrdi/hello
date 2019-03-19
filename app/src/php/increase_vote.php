@@ -55,6 +55,8 @@ while($vote = $q->fetch(PDO::FETCH_ASSOC)){
 }
 ?>
 
+ 
+
 
 
   <!-- du js -->
