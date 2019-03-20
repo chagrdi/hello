@@ -23,6 +23,7 @@
     <div class="container text-center my-auto">
       <h1 class="mb-1">Il est temps de voter!</h1>
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#liste">Faites le bon choix</a>
+      <a href="../../index.html" id="retour-accueil">Retour à l'accueil</a>
     </div>
     <div class="overlay"></div>
   </header>
@@ -63,12 +64,8 @@ while($vote = $q->fetch(PDO::FETCH_ASSOC)){
 <?php } ?>
 
 
-
-  
-
-
  <!-- Footer -->
- <footer class="footer text-center">
+ <footer class="footer text-center" id="footer-vote">
  <a class="btn btn-dark btn-xl js-scroll-trigger"
             href="../../index.html">Retour à l'accueil</a>
     <div class="container">

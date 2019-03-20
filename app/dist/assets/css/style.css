@@ -352,8 +352,17 @@ a:active {
   color: #ecb807;
 }
 
+#footer-vote {
+  margin-left: 40%;
+}
+
 #pagevotes {
   background-image: url('../../../src/assets/img/arcade-night.jpg');
+}
+
+#pagevotes #retour-accueil {
+  font-size: 13px;
+  color: #868e96;
 }
 
 .pourvoter {
