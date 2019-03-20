@@ -271,7 +271,8 @@ h6 {
 }
 
 /* The Close Button */
-.close {
+.close,
+.close2 {
   font-size: 28px;
   font-weight: bold;
   float: right;
