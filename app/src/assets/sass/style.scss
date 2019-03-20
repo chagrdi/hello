@@ -196,7 +196,7 @@ h6 {
   font-family: 'Source Sans Pro';
 }
 
-//hearder
+//header
 
 .masthead {
   min-height: 30rem;
@@ -247,11 +247,6 @@ h6 {
 .display-4{
     color: white;
 }
-
-
-
-//* FIN PREMIER ECRAN *//////////////////////////////////
-
 
 
 .jeux{
@@ -307,7 +302,7 @@ h6 {
   }
   
   /* The Close Button */
-  .close, .close2{
+  .close, .close2, .close3, .close4, .close5, .close6{
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -416,4 +411,37 @@ a {
 
 .text-secondary {
   color: $secondary !important;
+}
+
+.jeu{
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+#titre-liste{
+  margin-top: 60px;
+}
+
+#rang{
+  font-weight: bolder;
+  font-size: 40px;
+  color: #ecb807;
+}
+
+#nomjeu{
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.nonvote{
+
+  font-weight: bold;
+  font-size: 40px;
+  color: #ecb807;
+  margin: auto;
+
+}
+
+#pagevotes{
+  background-image: url('../../../src/assets/img/arcade-night.jpg');
 }

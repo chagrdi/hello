@@ -272,7 +272,11 @@ h6 {
 
 /* The Close Button */
 .close,
-.close2 {
+.close2,
+.close3,
+.close4,
+.close5,
+.close6 {
   font-size: 28px;
   font-weight: bold;
   float: right;
@@ -378,4 +382,35 @@ a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+.jeu {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#titre-liste {
+  margin-top: 60px;
+}
+
+#rang {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ecb807;
+}
+
+#nomjeu {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.nonvote {
+  font-size: 40px;
+  font-weight: bold;
+  margin: auto;
+  color: #ecb807;
+}
+
+#pagevotes {
+  background-image: url('../../../src/assets/img/arcade-night.jpg');
 }
