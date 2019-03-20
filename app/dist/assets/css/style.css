@@ -35,47 +35,6 @@ h6 {
   color: rgba(255, 255, 255, .7);
 }
 
-/* Map */
-.map {
-  height: 30rem;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
-
-.scroll-to-top {
-  line-height: 45px;
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-  display: none;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  color: white;
-  background: rgba(52, 58, 64, .5);
-}
-
-.scroll-to-top:focus,
-.scroll-to-top:hover {
-  color: white;
-}
-
-.scroll-to-top:hover {
-  background: #343a40;
-}
-
-.scroll-to-top i {
-  font-weight: 800;
-}
-
 .service-icon {
   font-size: 2.25rem;
   line-height: 7.5rem;
@@ -212,32 +171,6 @@ h6 {
   color: white;
 }
 
-.jeux {
-  padding-bottom: 40px;
-  background-color: rgba(235, 235, 235, .267);
-}
-
-.cards {
-  display: flex;
-  padding-top: 2%;
-  justify-content: center;
-}
-
-.card {
-  margin: 0 26px 0 0;
-}
-
-.card .card-title {
-  font-size: 16px;
-  text-align: center;
-}
-
-.card .card-body {
-  text-align: center;
-  justify-content: center;
-}
-
-/* The Modal (background) */
 .modal {
     /* Hidden by default */
   position: fixed;
@@ -286,6 +219,29 @@ h6 {
   color: black;
 }
 
+.modal-content {
+  width: 60% !important;
+  height: 280px;
+}
+
+.modal-content h6 {
+  font-size: 10px;
+}
+
+.modal-content button {
+  margin-top: 30px;
+}
+
+.modal-content h2 {
+  font-size: 18px;
+  margin-top: none;
+  color: #00b7ff;
+}
+
+.modal-content p {
+  font-style: italic;
+}
+
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -305,22 +261,6 @@ footer.footer .social-link {
 footer.footer .social-link:hover {
   text-decoration: none;
   background-color: #155d74;
-}
-
-.callout {
-  padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .1) 100%), url('../../../src/assets/img/arcade-night.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.callout h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  display: block;
-  max-width: 30rem;
-  color: white;
 }
 
 a {
@@ -409,29 +349,6 @@ a:active {
 
 #pagevotes {
   background-image: url('../../../src/assets/img/arcade-night.jpg');
-}
-
-.modal-content {
-  width: 60% !important;
-  height: 280px;
-}
-
-.modal-content h6 {
-  font-size: 10px;
-}
-
-.modal-content button {
-  margin-top: 30px;
-}
-
-.modal-content h2 {
-  font-size: 18px;
-  margin-top: none;
-  color: #00b7ff;
-}
-
-.modal-content p {
-  font-style: italic;
 }
 
 .pourvoter {

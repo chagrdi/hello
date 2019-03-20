@@ -1,6 +1,4 @@
-
-
-// Restated Bootstrap Variables
+// Toutes les couleurs 
 
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
@@ -17,19 +15,20 @@ $black: #000 !default;
 $primary: #1D809F !default;
 $secondary: #ecb807 !default;
 
+// fin des couleurs // 
+
+
+// Css en général  ///////////////////////////
 body,
 html {
   width: 100%;
   height: 100%;
 }
 
-
-// Custom Button Size
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
 
-// Content Section
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
@@ -45,7 +44,10 @@ html {
   }
 }
 
-// Typography
+// fin css en général 
+
+
+// Typo et icons /////////////////
 h1,
 h2,
 h3,
@@ -54,58 +56,9 @@ h5,
 h6 {
   font-weight: 700;
 }
-
 .text-faded {
   color: fade-out($white, 0.3);
 }
-
-/* Map */
-
-.map {
-  height: 30rem;
-}
-
-@media(max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
-
-// Scroll to top button
-.scroll-to-top {
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-
-  display: none;
-
-  width: 50px;
-  height: 50px;
-
-  text-align: center;
-
-  color: white;
-  background: fade-out($gray-800, .5);
-
-  line-height: 45px;
-  &:focus,
-  &:hover {
-    color: white;
-  }
-  &:hover {
-    background: $gray-800;
-  }
-  i {
-    font-weight: 800;
-  }
-}
-
-
-// icons
 
 .service-icon {
   background-color: $white;
@@ -118,8 +71,10 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+// fin typo et icons 
 
-// portfolio
+
+// portfolio /////////////////////
 .portfolio-item {
   display: block;
   position: relative;
@@ -148,6 +103,7 @@ h6 {
       }
     }
   }
+
   @media(min-width: 992px) {
     max-width: none;
     margin: 0;
@@ -181,9 +137,11 @@ h6 {
   }
 }
 
-// mixins
-// Mixins
-// Background Cover Mixin
+// fin du css du portfolio
+
+
+
+// mixins /////////////
 @mixin background-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -191,13 +149,14 @@ h6 {
   background-size: cover;
 }
 
-// Font Mixins
 @mixin body-font {
   font-family: 'Source Sans Pro';
 }
+// fin des mixins //
 
-//header
 
+
+// header ///////////////////
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -225,12 +184,14 @@ h6 {
   }
 }
 
+// fin du header //
 
+
+// css pour le vote ///////////////////
 .p-vote{
     font-weight: bold;
     margin-bottom: 2px;
 }
-
 
 .liste{
     padding-top: 10%;
@@ -248,37 +209,11 @@ h6 {
     color: white;
 }
 
-
-.jeux{
-    background-color:rgba(235, 235, 235, 0.267);
-    padding-bottom: 40px;
-}
-
-.cards{
-    display: flex;
-    padding-top: 2%;
-    justify-content: center;
-
-}
-
-.card{
-    margin: 0 26px 0 0px;
-    
-    .card-title{
-        font-size: 16px;
-        text-align: center;
-    }
-    .card-body{
-      text-align: center;
-      justify-content: center;
-    }
-
-}
-
-//* FIN DERNIER ECRAN *//////////////////////////////////
+// fin du css pour le vote // 
 
 
-/* The Modal (background) */
+// debut du css pour les pop ups///////////////
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -316,10 +251,29 @@ h6 {
   }
 
 
+.modal-content{
+  height: 280px;
+  h6{
+    font-size: 10px;
+  }
+  width: 60% !important;
+  button{
+    margin-top: 30px;
+  }
+  h2{
+    margin-top: none;
+    font-size: 18px;
+    color: rgb(0, 183, 255);
+  }
+  p{
+    font-style: italic;
+  }
+}
 
-  
-  // footer
+// fin du css pour les pop ups//
 
+
+// footer /////////////////////
   footer.footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -339,25 +293,9 @@ h6 {
     }
   }
 
-  // Callout
-.callout {
-  padding: 15rem 0;
-  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../../../src/assets/img/arcade-night.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  h2 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    display: block;
-    max-width: 30rem;
-    color: white;
-  }
-}
 
 
-// en plus
-
+// en plus et boutons //////////////////
 a {
   color: $primary;
   &:hover,
@@ -411,7 +349,10 @@ a {
 .text-secondary {
   color: $secondary !important;
 }
+// fin du css pour boutons //
 
+
+// debut du css pour page php //////////////////////
 .jeu{
   margin-bottom: 50px;
   margin-top: 20px;
@@ -445,36 +386,19 @@ a {
   background-image: url('../../../src/assets/img/arcade-night.jpg');
 }
 
-
-.modal-content{
-  height: 280px;
-  h6{
-    font-size: 10px;
-  }
-  width: 60% !important;
-  button{
-    margin-top: 30px;
-  }
-  h2{
-    margin-top: none;
-    font-size: 18px;
-    color: rgb(0, 183, 255);
-  }
-  p{
-    font-style: italic;
-  }
-}
-
-
-
 .pourvoter{
-margin-top: 80px;
-text-align: center;
-font-style: italic;
-color: rgb(0, 7, 70);
-font-size: 20px;
-}
+  margin-top: 80px;
+  text-align: center;
+  font-style: italic;
+  color: rgb(0, 7, 70);
+  font-size: 20px;
+  }
 
+// fin du css du php //
+
+
+
+// derniere section avec photo /////////////
 
 .nous{
   width: 400px;
@@ -485,3 +409,5 @@ font-size: 20px;
   padding-top: 3em;
   padding-bottom: 3em;
 }
+
+// fin photo //
