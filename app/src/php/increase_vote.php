@@ -19,7 +19,7 @@
 <body>
 
 <!-- Header -->
-<header class="masthead d-flex">
+<header class="masthead d-flex" id="pagevotes">
     <div class="container text-center my-auto">
       <h1 class="mb-1">Il est temps de voter!</h1>
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#liste">Faites le bon choix</a>

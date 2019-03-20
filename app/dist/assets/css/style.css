@@ -410,3 +410,7 @@ a:active {
   margin: auto;
   color: #ecb807;
 }
+
+#pagevotes {
+  background-image: url('../../../src/assets/img/arcade-night.jpg');
+}
