@@ -413,7 +413,7 @@ a:active {
 
 .modal-content {
   width: 60% !important;
-  height: 250px;
+  height: 280px;
 }
 
 .modal-content h6 {
@@ -422,4 +422,14 @@ a:active {
 
 .modal-content button {
   margin-top: 30px;
+}
+
+.modal-content h2 {
+  font-size: 18px;
+  margin-top: none;
+  color: #00b7ff;
+}
+
+.modal-content p {
+  font-style: italic;
 }
