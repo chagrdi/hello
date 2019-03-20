@@ -413,9 +413,13 @@ a:active {
 
 .modal-content {
   width: 60% !important;
-  height: 300px;
+  height: 250px;
 }
 
 .modal-content h6 {
   font-size: 10px;
+}
+
+.modal-content button {
+  margin-top: 30px;
 }
