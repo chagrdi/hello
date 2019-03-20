@@ -69,7 +69,7 @@ while($vote = $q->fetch(PDO::FETCH_ASSOC)){
  <a class="btn btn-dark btn-xl js-scroll-trigger"
             href="../../index.html">Retour à l'accueil</a>
     <div class="container">
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p>
+      <p class="text-muted small mb-0">Copyright &copy; Notre site 2019</p>
     </div>
   </footer>
 
