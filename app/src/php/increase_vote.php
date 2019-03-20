@@ -18,8 +18,22 @@
 
 <body>
 
-<ul class="list-group">
-  <li class="list-group-item">
+<!-- Header -->
+<header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Il est temps de voter!</h1>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#liste">Faites le bon choix</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+   <div class="container" id="titre-liste">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Le classement</h3>
+        <h2 class="mb-5">Votez pour votre jeu préféré!</h2>
+      </div>
+      <div class="row no-gutters">
+
   <?php
 // Connect to database
 require('connect.php');
@@ -29,34 +43,27 @@ require('request.php');
 
 /* Boucle pour tout les jeux */
 while($vote = $q->fetch(PDO::FETCH_ASSOC)){
-    /* mettre le nombre position */
-    $rang++;
-    echo $rang;
-    echo "<p class='p-vote'>" . $vote["slug_game"] . "</p>";
-    echo $vote["nb_votes"] . " Votes" . '<br>';
-    echo "<a class='btn-vote' href='cookies.php?game=". $vote["slug_game"] . "'>Voter</a> <br>";
-} ?>
-  </li>
-</ul>
-
-
-    <?php
-// Connect to database
-require('connect.php');
-
-// Request to to database (get nb_vote)
-require('request.php');
-
-/* Boucle pour tout les jeux */
-while($vote = $q->fetch(PDO::FETCH_ASSOC)){
-    echo "<p class='p-vote'>" . $vote["slug_game"] . "</p>";
-    echo $vote["nb_votes"] . " Votes" . '<br>';
-    echo "<a class='btn-vote' href='cookies.php?game=". $vote["slug_game"] . "'>Voter</a> <br>";
-}
-?>
-
+  $rang++;
+  ?>
+  <div id="liste" class="container text-center my-auto">
+    <div class="jeu">
+    <p id="rang"><?= $rang ?></p>
+    <p id="nomjeu"><?= $vote["slug_game"] ?></p>
+    <p><?= $vote["nb_votes"] . ' ' ?>Votes</p>
+    <?php echo "<a class='btn-vote' href='cookies.php?game=". $vote["slug_game"] . "'>Voter</a> <br>"; ?>
+    </div>
+    
+  </div>
+    
+<?php } ?>
  
 
+ <!-- Footer -->
+ <footer class="footer text-center">
+    <div class="container">
+      <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p>
+    </div>
+  </footer>
 
 
   <!-- du js -->

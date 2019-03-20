@@ -18,7 +18,7 @@ if (!isset($_COOKIE["Nepeuxplusvoter"])){
     $q->execute();
 } /* Si des cookies on bloque */
 else if (isset($_COOKIE["Nepeuxplusvoter"])){
-    echo "tu ne peux plus voter";
+    echo '<p class="nonvote">Reviens dans 24h pour revoter!<p>';
     $nb_votes = $nb_vote["nb_votes"];
 
 }
