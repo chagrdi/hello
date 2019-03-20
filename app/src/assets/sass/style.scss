@@ -1,4 +1,6 @@
-// Toutes les couleurs 
+
+
+// Restated Bootstrap Variables
 
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
@@ -15,20 +17,19 @@ $black: #000 !default;
 $primary: #1D809F !default;
 $secondary: #ecb807 !default;
 
-// fin des couleurs // 
-
-
-// Css en général  ///////////////////////////
 body,
 html {
   width: 100%;
   height: 100%;
 }
 
+
+// Custom Button Size
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
 
+// Content Section
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
@@ -44,10 +45,7 @@ html {
   }
 }
 
-// fin css en général 
-
-
-// Typo et icons /////////////////
+// Typography
 h1,
 h2,
 h3,
@@ -56,9 +54,58 @@ h5,
 h6 {
   font-weight: 700;
 }
+
 .text-faded {
   color: fade-out($white, 0.3);
 }
+
+/* Map */
+
+.map {
+  height: 30rem;
+}
+
+@media(max-width: 992px) {
+  .map {
+    height: 75%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}
+
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  display: none;
+
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+
+  color: white;
+  background: fade-out($gray-800, .5);
+
+  line-height: 45px;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  i {
+    font-weight: 800;
+  }
+}
+
+
+// icons
 
 .service-icon {
   background-color: $white;
@@ -71,10 +118,8 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-// fin typo et icons 
 
-
-// portfolio /////////////////////
+// portfolio
 .portfolio-item {
   display: block;
   position: relative;
@@ -103,7 +148,6 @@ h6 {
       }
     }
   }
-
   @media(min-width: 992px) {
     max-width: none;
     margin: 0;
@@ -137,11 +181,9 @@ h6 {
   }
 }
 
-// fin du css du portfolio
-
-
-
-// mixins /////////////
+// mixins
+// Mixins
+// Background Cover Mixin
 @mixin background-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -149,14 +191,18 @@ h6 {
   background-size: cover;
 }
 
+// Font Mixins
 @mixin body-font {
   font-family: 'Source Sans Pro';
 }
-// fin des mixins //
 
+@mixin grostitre {
+  font-weight : bolder;
+  font-size : 40px;
+}
 
+//header
 
-// header ///////////////////
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -184,14 +230,12 @@ h6 {
   }
 }
 
-// fin du header //
 
-
-// css pour le vote ///////////////////
 .p-vote{
     font-weight: bold;
     margin-bottom: 2px;
 }
+
 
 .liste{
     padding-top: 10%;
@@ -209,11 +253,37 @@ h6 {
     color: white;
 }
 
-// fin du css pour le vote // 
+
+.jeux{
+    background-color:rgba(235, 235, 235, 0.267);
+    padding-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+
+}
+
+.card{
+    margin: 0 26px 0 0px;
+    
+    .card-title{
+        font-size: 16px;
+        text-align: center;
+    }
+    .card-body{
+      text-align: center;
+      justify-content: center;
+    }
+
+}
+
+//* FIN DERNIER ECRAN *//////////////////////////////////
 
 
-// debut du css pour les pop ups///////////////
-
+/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -236,7 +306,7 @@ h6 {
   }
   
   /* The Close Button */
-  .close, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9, .close10, .close11, {
+  .close, .close2, .close3, .close4, .close5, .close6{
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -244,46 +314,17 @@ h6 {
   }
   
   .close:hover,
-  .close:focus,.close2:hover,
-  .close2:focus, .close3:hover,
-  .close3:focus, .close4:hover,
-  .close4:focus, .close5:hover,
-  .close5:focus, .close6:hover,
-  .close6:focus, .close7:hover,
-  .close7:focus, .close8:hover,
-  .close8:focus, .close9:hover,
-  .close9:focus, .close10:hover,
-  .close10:focus, .close11:hover,
-  .close11:focus {
+  .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
 
 
-.modal-content{
-  height: 280px;
-  h6{
-    font-size: 10px;
-  }
-  width: 60% !important;
-  button{
-    margin-top: 30px;
-  }
-  h2{
-    margin-top: none;
-    font-size: 18px;
-    color: rgb(0, 183, 255);
-  }
-  p{
-    font-style: italic;
-  }
-}
 
-// fin du css pour les pop ups//
+  
+  // footer
 
-
-// footer /////////////////////
   footer.footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -303,9 +344,25 @@ h6 {
     }
   }
 
+  // Callout
+.callout {
+  padding: 15rem 0;
+  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../../../src/assets/img/arcade-night.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+    max-width: 30rem;
+    color: white;
+  }
+}
 
 
-// en plus et boutons //////////////////
+// en plus
+
 a {
   color: $primary;
   &:hover,
@@ -359,10 +416,7 @@ a {
 .text-secondary {
   color: $secondary !important;
 }
-// fin du css pour boutons //
 
-
-// debut du css pour page php //////////////////////
 .jeu{
   margin-bottom: 50px;
   margin-top: 20px;
@@ -372,64 +426,35 @@ a {
   margin-top: 60px;
 }
 
+
+
 #rang{
-  font-weight: bolder;
-  font-size: 40px;
-  color: $secondary;
+  color: #ecb807;
+  @include grostitre;
 }
 
 #nomjeu{
-  font-weight: bolder;
-  font-size: 25px;
+  @include grostitre;
+  font-size: 25px !important;
 }
 
 .nonvote{
 
-  font-weight: bold;
-  font-size: 40px;
-  color: $secondary;
+  @include grostitre;
+  color: #ecb807;
   margin: auto;
 
 }
 
-#footer-vote{
-  margin-left: 40%;
-}
-
 #pagevotes{
   background-image: url('../../../src/assets/img/arcade-night.jpg');
+}
 
-  #retour-accueil{
-    color: #868e96;
-    font-size: 13px;
+
+.modal-content{
+  height: 300px;
+  h6{
+    font-size: 10px;
   }
-
+  width: 60% !important;
 }
-
-.pourvoter{
-  margin-top: 80px;
-  text-align: center;
-  font-style: italic;
-  color: rgb(0, 7, 70);
-  font-size: 20px;
-  }
-
-
-
-// fin du css du php //
-
-
-
-// derniere section avec photo /////////////
-
-.nous{
-  width: 400px;
-	height: 400px;
-}
-
-.photo{
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
-// fin photo //
