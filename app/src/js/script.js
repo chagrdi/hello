@@ -203,27 +203,56 @@ window.onclick = function(event) {
 /* CHARLELIE */
 
 // Get the modal
-var charlelie = document.getElementById('sebastianModal');
+var charlelie = document.getElementById('charlelieModal');
 
 // Get the button that opens the modal
-var btn4 = document.getElementById("sebastianBtn");
+var btn9 = document.getElementById("charlelieBtn");
 
 // Get the <span> element that closes the modal
-var span4 = document.getElementsByClassName("close4")[0];
+var span9 = document.getElementsByClassName("close9")[0];
 
 // When the user clicks on the button, open the modal 
-btn4.onclick = function() {
-  sebastian.style.display = "block";
+btn9.onclick = function() {
+  charlelie.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span4.onclick = function() {
-  sebastian.style.display = "none";
+span9.onclick = function() {
+  charlelie.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    sebastian.style.display = "none";
+    charlelie.style.display = "none";
+  }
+}
+
+
+/* ROXANE */
+
+// Get the modal
+var roxane = document.getElementById('roxaneModal');
+
+// Get the button that opens the modal
+var btn8 = document.getElementById("roxaneBtn");
+
+// Get the <span> element that closes the modal
+var span8 = document.getElementsByClassName("close11")[0];
+
+// When the user clicks on the button, open the modal 
+btn8.onclick = function() {
+  roxane.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span8.onclick = function() {
+  roxane.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    roxane.style.display = "none";
   }
 }
