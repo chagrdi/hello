@@ -27,12 +27,17 @@
     <div class="overlay"></div>
   </header>
 
-   <div class="container" id="titre-liste">
+
+  <p id="liste"></p>
+  <div class="container" id="titre-liste">
       <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0">Le classement</h3>
         <h2 class="mb-5">Votez pour votre jeu préféré!</h2>
       </div>
       <div class="row no-gutters">
+
+  
+  
 
   <?php
 // Connect to database
@@ -45,7 +50,7 @@ require('request.php');
 while($vote = $q->fetch(PDO::FETCH_ASSOC)){
   $rang++;
   ?>
-  <div id="liste" class="container text-center my-auto">
+  <div class="container text-center my-auto">
     <div class="jeu">
     <p id="rang"><?= $rang ?></p>
     <p id="nomjeu"><?= $vote["slug_game"] ?></p>

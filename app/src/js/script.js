@@ -23,81 +23,51 @@ span2.onclick = function() {
   aniss.style.display = "none";
 }
 
-
-/* GABRIEL */
-var gabriel = document.getElementById('gabrielModal');
-var btn3 = document.getElementById("gabrielBtn");
-var span3 = document.getElementsByClassName("close3")[0];
-btn3.onclick = function() {
-  gabriel.style.display = "block";
-}
-span3.onclick = function() {
-  gabriel.style.display = "none";
-}
-
-
-
-/* THOMAS */
-var thomas = document.getElementById('thomasModal');
-var btn4 = document.getElementById("thomasBtn");
-var span4 = document.getElementsByClassName("close7")[0];
-
-btn4.onclick = function() {
-  thomas.style.display = "block";
-}
-span4.onclick = function() {
-  thomas.style.display = "none";
-}
-
-
-
-
-/* SEBASTIAN */
-var sebastian = document.getElementById('sebastianModal');
-var btn4 = document.getElementById("sebastianBtn");
-var span4 = document.getElementsByClassName("close4")[0];
-btn4.onclick = function() {
-  sebastian.style.display = "block";
-}
-span4.onclick = function() {
-  sebastian.style.display = "none";
-}
-
-
 /* CLARA */
 var clara = document.getElementById('claraModal');
-var btn5 = document.getElementById("claraBtn");
-var span5 = document.getElementsByClassName("close3")[0];
-
-btn5.onclick = function() {
+var btn3 = document.getElementById("claraBtn");
+var span3 = document.getElementsByClassName("close3")[0];
+btn3.onclick = function() {
   clara.style.display = "block";
 }
-
-span5.onclick = function() {
+span3.onclick = function() {
   clara.style.display = "none";
 }
 
-
+/* SEB */
+var seb = document.getElementById('sebModal');
+var btn4 = document.getElementById("sebBtn");
+var span4 = document.getElementsByClassName("close4")[0];
+btn4.onclick = function() {
+  seb.style.display = "block";
+}
+span4.onclick = function() {
+  seb.style.display = "none";
+}
 
 /* NICOLAS */
 var nicolas = document.getElementById('nicolasModal');
-var btn6 = document.getElementById("nicolasBtn");
-var span6 = document.getElementsByClassName("close5")[0];
-
-btn6.onclick = function() {
+var btn5 = document.getElementById("nicolasBtn");
+var span5 = document.getElementsByClassName("close5")[0];
+btn5.onclick = function() {
   nicolas.style.display = "block";
 }
-
-span6.onclick = function() {
+span5.onclick = function() {
   nicolas.style.display = "none";
 }
 
-
-
+/* GABRIEL */
+var gabriel = document.getElementById('gabrielModal');
+var btn6 = document.getElementById("gabrielBtn");
+var span6 = document.getElementsByClassName("close6")[0];
+btn6.onclick = function() {
+  gabriel.style.display = "block";
+}
+span6.onclick = function() {
+  gabriel.style.display = "none";
+}
 
 /* SIMON */
-
-// Get the modal
 var simon = document.getElementById('simonModal');
 var btn7 = document.getElementById("simonBtn");
 var span7 = document.getElementsByClassName("close7")[0];
@@ -108,7 +78,16 @@ span7.onclick = function() {
   simon.style.display = "none";
 }
 
-
+/* CLARAP */
+var clarap = document.getElementById('clarapModal');
+var btn8 = document.getElementById("clarapBtn");
+var span8 = document.getElementsByClassName("close8")[0];
+btn8.onclick = function() {
+  clarap.style.display = "block";
+}
+span8.onclick = function() {
+  clarap.style.display = "none";
+}
 
 /* CHARLELIE */
 var charlelie = document.getElementById('charlelieModal');
@@ -121,17 +100,37 @@ span9.onclick = function() {
   charlelie.style.display = "none";
 }
 
-
+/* THOMAS */
+var thomas = document.getElementById('thomasModal');
+var btn10 = document.getElementById("thomasBtn");
+var span10 = document.getElementsByClassName("close10")[0];
+btn10.onclick = function() {
+  thomas.style.display = "block";
+}
+span10.onclick = function() {
+  thomas.style.display = "none";
+}
 
 /* ROXANE */
 var roxane = document.getElementById('roxaneModal');
-var btn8 = document.getElementById("roxaneBtn");
-var span8 = document.getElementsByClassName("close11")[0];
-
-btn8.onclick = function() {
+var btn11 = document.getElementById("roxaneBtn");
+var span11 = document.getElementsByClassName("close11")[0];
+btn11.onclick = function() {
   roxane.style.display = "block";
 }
-span8.onclick = function() {
+span11.onclick = function() {
   roxane.style.display = "none";
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
