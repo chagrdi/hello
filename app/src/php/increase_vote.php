@@ -49,6 +49,7 @@ require('request.php');
 
 /* Boucle pour tout les jeux */
 while($vote = $q->fetch(PDO::FETCH_ASSOC)){
+  /* on incrémente pour savoir qui a le plus de votes et le faire remonter dans le classement */
   $rang++;
   ?>
   <div class="container text-center my-auto">
