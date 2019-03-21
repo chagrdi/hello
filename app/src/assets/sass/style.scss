@@ -1,7 +1,4 @@
-
-
-// Restated Bootstrap Variables
-
+// couleurs 
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -17,19 +14,61 @@ $black: #000 !default;
 $primary: #1D809F !default;
 $secondary: #ecb807 !default;
 
+// modif generale 
 body,
 html {
   width: 100%;
   height: 100%;
 }
 
-
-// Custom Button Size
-.btn-xl {
-  padding: 1.25rem 2.5rem;
+body {
+  overflow-x: hidden;
 }
 
-// Content Section
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+  }
+}
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
@@ -45,7 +84,57 @@ html {
   }
 }
 
-// Typography
+// boutons
+.btn {
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+
+// hover modif
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+// typo 
 h1,
 h2,
 h3,
@@ -59,54 +148,7 @@ h6 {
   color: fade-out($white, 0.3);
 }
 
-/* Map */
-
-.map {
-  height: 30rem;
-}
-
-@media(max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
-
-// Scroll to top button
-.scroll-to-top {
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-
-  display: none;
-
-  width: 50px;
-  height: 50px;
-
-  text-align: center;
-
-  color: white;
-  background: fade-out($gray-800, .5);
-
-  line-height: 45px;
-  &:focus,
-  &:hover {
-    color: white;
-  }
-  &:hover {
-    background: $gray-800;
-  }
-  i {
-    font-weight: 800;
-  }
-}
-
-
 // icons
-
 .service-icon {
   background-color: $white;
   color: $primary;
@@ -182,8 +224,6 @@ h6 {
 }
 
 // mixins
-// Mixins
-// Background Cover Mixin
 @mixin background-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -191,7 +231,6 @@ h6 {
   background-size: cover;
 }
 
-// Font Mixins
 @mixin body-font {
   font-family: 'Source Sans Pro';
 }
@@ -202,7 +241,6 @@ h6 {
 }
 
 //header
-
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -230,12 +268,11 @@ h6 {
   }
 }
 
-
+// css du php
 .p-vote{
     font-weight: bold;
     margin-bottom: 2px;
 }
-
 
 .liste{
     padding-top: 10%;
@@ -252,7 +289,6 @@ h6 {
 .display-4{
     color: white;
 }
-
 
 .jeux{
     background-color:rgba(235, 235, 235, 0.267);
@@ -280,50 +316,45 @@ h6 {
 
 }
 
-//* FIN DERNIER ECRAN *//////////////////////////////////
 
-
-/* The Modal (background) */
+// css des pop up //
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
 
   }
   
   /* The Close Button */
   .close, .close2, .close3, .close4, .close5, .close6{
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
   }
   
   .close:hover,
   .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
   }
 
-
-
-  
-  // footer
+ // footer
 
   footer.footer {
     padding-top: 5rem;
@@ -344,7 +375,7 @@ h6 {
     }
   }
 
-  // Callout
+// Callout
 .callout {
   padding: 15rem 0;
   background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../../../src/assets/img/arcade-night.jpg');
@@ -362,7 +393,6 @@ h6 {
 
 
 // en plus
-
 a {
   color: $primary;
   &:hover,
@@ -426,8 +456,7 @@ a {
   margin-top: 60px;
 }
 
-
-
+// css des pop up encore
 #rang{
   color: #ecb807;
   @include grostitre;
@@ -450,7 +479,6 @@ a {
   background-image: url('../../../src/assets/img/arcade-night.jpg');
 }
 
-
 .modal-content{
   height: 300px;
   h6{
@@ -461,7 +489,6 @@ a {
 
 
 // derniere section photo
-
 .modal-content p {
   font-style: italic;
 }
@@ -492,7 +519,6 @@ a {
 
 
 // navbar 
-
 #navbarNav{
   text-align: center;
   justify-content: center;
@@ -551,3 +577,187 @@ ul.social-buttons {
   background-image: url('../../../src/assets/img/arcade-night.jpg');
 }
 
+// about histoire des b3
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: '';
+    background-color: $gray-200;
+  }
+  > li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+    &:after,
+    &:before {
+      display: table;
+      content: ' ';
+    }
+    &:after {
+      clear: both;
+    }
+    .timeline-panel {
+      position: relative;
+      float: right;
+      width: 100%;
+      padding: 0 20px 0 100px;
+      text-align: left;
+      &:before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0;
+      }
+      &:after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0;
+      }
+    }
+    .timeline-image {
+      position: absolute;
+      z-index: 100;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      margin-left: 0;
+      text-align: center;
+      color: white;
+      border: 7px solid $gray-200;
+      border-radius: 100%;
+      background-color: $primary;
+      h4 {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 12px;
+      }
+    }
+    &.timeline-inverted > .timeline-panel {
+      float: right;
+      padding: 0 20px 0 100px;
+      text-align: left;
+      &:before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0;
+      }
+      &:after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .timeline-heading {
+    h4 {
+      margin-top: 0;
+      color: inherit;
+      &.subheading {
+        text-transform: none;
+      }
+    }
+  }
+  .timeline-body {
+     > ul,
+    > p {
+      margin-bottom: 0;
+    }
+  }
+}
+@media(min-width:768px) {
+  .timeline {
+    &:before {
+      left: 50%;
+    }
+    > li {
+      min-height: 100px;
+      margin-bottom: 100px;
+      .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+      }
+      .timeline-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+        h4 {
+          font-size: 13px;
+          line-height: 18px;
+          margin-top: 16px;
+        }
+      }
+      &.timeline-inverted > .timeline-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+      }
+    }
+  }
+}
+@media(min-width:992px) {
+  .timeline {
+    > li {
+      min-height: 150px;
+      .timeline-panel {
+        padding: 0 20px 20px;
+      }
+      .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+        h4 {
+          font-size: 18px;
+          line-height: 26px;
+          margin-top: 30px;
+        }
+      }
+      &.timeline-inverted > .timeline-panel {
+        padding: 0 20px 20px;
+      }
+    }
+  }
+}
+@media(min-width:1200px) {
+  .timeline {
+    > li {
+      min-height: 170px;
+      .timeline-panel {
+        padding: 0 20px 20px 100px;
+      }
+      .timeline-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+        h4 {
+          margin-top: 40px;
+        }
+      }
+      &.timeline-inverted > .timeline-panel {
+        padding: 0 100px 20px 20px;
+      }
+    }
+  }
+}
+
+// petite section
+#separe{
+  background-image: url('../../../src/assets/img/retro (2).jpg');
+  background-position: center;
+}
