@@ -454,23 +454,50 @@ a:active {
   justify-content: center;
 }
 
-.social-icons a {
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  display: inline-block;
-  width: 3.5rem;
-  height: 3.5rem;
-  margin-right: 1rem;
+.team-member {
+  margin-bottom: 50px;
   text-align: center;
-  color: #fff !important;
+}
+
+.team-member img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid #fff;
+}
+
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.team-member p {
+  margin-top: 0;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: all .3s;
+  color: white;
   border-radius: 100%;
-  background-color: #495057;
+  outline: none;
+  background-color: #575757;
 }
 
-.social-icons a:last-child {
-  margin-right: 0;
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
+  background-color: #00acca;
 }
 
-.social-icons a:hover {
-  background-color: #1d809f;
+#gens {
+  background-image: url('../../../src/assets/img/arcade-night.jpg');
 }
