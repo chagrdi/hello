@@ -449,6 +449,11 @@ a:active {
   color: #00b7ff;
 }
 
+#navbarNav {
+  text-align: center;
+  justify-content: center;
+}
+
 .social-icons a {
   font-size: 1.5rem;
   line-height: 3.5rem;
