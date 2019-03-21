@@ -448,3 +448,24 @@ a:active {
   margin-top: none;
   color: #00b7ff;
 }
+
+.social-icons a {
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1rem;
+  text-align: center;
+  color: #fff !important;
+  border-radius: 100%;
+  background-color: #495057;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #1d809f;
+}
