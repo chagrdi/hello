@@ -2,7 +2,7 @@
 /* On met un cookie dans le navigateur lors du vote */
 $value = 'bloquervote';
 /* On définit un temps de vie pour le cookie */
-setcookie("Nepeuxplusvoter", $value, time() + 86400);
+setcookie("Nepeuxplusvoter", $value, time() + 8);
 header('Location: increase_vote.php');
 
 // Connect to database

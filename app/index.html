@@ -39,6 +39,28 @@
 
 <body>
 
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse container" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index2.html">La team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:8888/arcade4/hello/app/src/php/increase_vote.php">Voter</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Notre Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
@@ -294,33 +316,33 @@
 
         <!-- The Modal -->
         <div id="nicolasModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close5" id="nicolasClose">&times;</span>
-              <p>Le jeu de Nicolas</p>
-              <h2>TEMPEST GAME</h2>
-              <h6 class="modif">
-                Kakeo jeune informaticien et concepteur de jeu dans une entreprise c oréenne depuis plus de 10 ans. Il
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close5" id="nicolasClose">&times;</span>
+            <p>Le jeu de Nicolas</p>
+            <h2>TEMPEST GAME</h2>
+            <h6 class="modif">
+              Kakeo jeune informaticien et concepteur de jeu dans une entreprise c oréenne depuis plus de 10 ans. Il
 
-                était sur la création d’un jeu vidéo qu’il aime particulièrement, « Tempest Game » !
+              était sur la création d’un jeu vidéo qu’il aime particulièrement, « Tempest Game » !
 
-                Comme tous jeux avant sa sortie, il devait réaliser un dernier rush pour vérifier qu’il n’y ait pas de
-                bugs.
+              Comme tous jeux avant sa sortie, il devait réaliser un dernier rush pour vérifier qu’il n’y ait pas de
+              bugs.
 
-                Il dormi donc comme à son habitude au travail pour pouvoir avoir le temps de le finir.
+              Il dormi donc comme à son habitude au travail pour pouvoir avoir le temps de le finir.
 
-                Après de longues heures de travail, il partit enfin dormir !
+              Après de longues heures de travail, il partit enfin dormir !
 
-                Le lendemain matin ne se passa pas comme prévu car il ne se trouva pas dans son lit au bureau mais
+              Le lendemain matin ne se passa pas comme prévu car il ne se trouva pas dans son lit au bureau mais
 
-                dans une grotte sombre et où il avait à la main un arc !
+              dans une grotte sombre et où il avait à la main un arc !
 
-                Il comprit alors qu’il n’était plus en Coréen mais dans le jeu qu’il avait développé !
-              </h6>
-              <button type="button" class="btn btn-info">Je joue au jeu</button>
-            </div>
-
+              Il comprit alors qu’il n’était plus en Coréen mais dans le jeu qu’il avait développé !
+            </h6>
+            <button type="button" class="btn btn-info">Je joue au jeu</button>
           </div>
+
+        </div>
 
         <!-- GABRIEL -->
         <div class="col-lg-4">
@@ -412,10 +434,11 @@
               <p>Le jeu de Clara P</p>
               <h2>The Swapkat</h2>
               <h6 class="modif">
-                  L'objectif principal est d'atteindre un score assez élevé pour passer au niveau suivant.
-                  Selon le niveau, les exigences changent et sont indiquées sur l'écran.
-                  Il suffit d'aligner verticalement ou horizontalement au minimum trois sprites similaires pour les faire exploser et faire tomber le reste de la grille.
-                </h6>
+                L'objectif principal est d'atteindre un score assez élevé pour passer au niveau suivant.
+                Selon le niveau, les exigences changent et sont indiquées sur l'écran.
+                Il suffit d'aligner verticalement ou horizontalement au minimum trois sprites similaires pour les faire
+                exploser et faire tomber le reste de la grille.
+              </h6>
               <button type="button" class="btn btn-info">Je joue au jeu</button>
             </div>
 
@@ -488,7 +511,7 @@
                 DES QUE L’ON TOUCHE L’UNE D’ENTRE ELLE C’EST GAME OVER
               </h6>
               <button type="button" class="btn btn-info">Je joue au jeu</button>
-              
+
             </div>
 
           </div>
@@ -576,40 +599,27 @@
 
 
       <a href="https://www.linkedin.com/in/sorayatc " target="_blank" class="btn btn-xl btn-light">Soraya</a>
-      <a href="https://www.linkedin.com/in/charlotte-grandjean-chagrdi" target="_blank" class="btn btn-xl btn-dark">Charlotte</a>
+      <a href="https://www.linkedin.com/in/charlotte-grandjean-chagrdi" target="_blank"
+        class="btn btn-xl btn-dark">Charlotte</a>
       <a href="https://www.linkedin.com/in/sarah-piras-822856115" target="_blank" class="btn btn-xl btn-light">Sarah</a>
     </div>
   </section>
   </section>
 
-
-  <!-- Les membres de l'équipe -->
-  <section class="content-section bg-primary text-white" id="partageznotreprojet">
-      <div class="container text-center">
-        <h2 class="mb-4">Partagez notre projet !</h2>
-
-        <div class="socialmediabutton">
-            <!--BUTONS RESEAUX SOCIAUX-->
-              <div id="fb-root"></div>
-            <!-- Your share button code -->
-              <div class="fb-share-button" 
-                data-href="http://localhost:3000/" 
-                data-layout="button_count">
-              </div>
-              <div>
-                  <a class="twitter-share-button"
-                  href="https://twitter.com/intent/tweet">
-                Tweet</a> 
-              </div>
-              <div>
-                
-              </div>
+  <!--Boutons de partage du projet-->
+  <section class="content-section bg-primary text-white" id ="partages">
+    <div class="container text-center">
+      <h2 class="mb-4">Partagez notre projet ! </h2>
+      <div class="socialmedias">
+        <div class="fb-share-button" 
+          data-href="https://www.your-domain.com/your-page.html" 
+          data-layout="button_count">
         </div>
-
-        <!--BUTONS RESEAUX SOCIAUX-->
       </div>
-    </section>
+    </div>
   </section>
+
+
 
 
   <!-- Footer -->
@@ -617,6 +627,7 @@
     <div class="container">
       <p class="text-muted small mb-0">Copyright &copy; Notre site 2019</p>
     </div>
+    <a class="btn btn-primary btn-xl js-scroll-trigger" href="index2.html">C'est parti!</a>
   </footer>
 
 
