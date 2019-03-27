@@ -131,7 +131,6 @@ span11.onclick = function() {
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
-
 /*API TWITTER*/
   window.twttr = (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0],
