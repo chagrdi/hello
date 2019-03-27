@@ -772,3 +772,12 @@ ul.social-buttons li a:hover {
   margin-top: 50px;
   background-color: #81d481 !important;
 }
+
+#partages .socialmedias {
+  display: flex;
+  justify-content: center;
+}
+
+#partages .unbouton {
+  margin-left: 5px;
+}

@@ -18,11 +18,11 @@
   <!--Facebook API-->
    <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-    <meta property="og:url"           content="http://localhost:3000/" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Your Website Title" />
-    <meta property="og:description"   content="Your description" />
-    <meta property="og:image"         content="http://localhost:3000/" />
+    <meta property="og:url"           content="google.fr" />
+    <meta property="og:type"          content="Site internet" />
+    <meta property="og:title"         content="Mon super site" />
+    <meta property="og:description"   content="Mon portfolio personnel." />
+    <meta property="og:image"         content="google.fr" />
 
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -275,7 +275,7 @@
                 <p class="mb-0">Le jeu de Sebastian</p>
               </span>
             </span>
-            <img class="img-fluid" src="src/assets/img/witch4.jpg" alt="">
+            <img class="img-fluid" src="src/assets/img/magicien.jpg" alt="">
           </a>
 
           <!-- The Modal -->
@@ -608,16 +608,28 @@
   </section>
   </section>
 
+
+
+  
   <!--Boutons de partage du projet-->
+  <div id="fb-root"></div>
   <section class="content-section bg-primary text-white" id ="partages">
     <div class="container text-center">
-      <h2 class="mb-4">Partagez notre projet ! </h2>
-      <div class="socialmedias">
-        <div class="fb-share-button" 
-          data-href="https://www.your-domain.com/your-page.html" 
-          data-layout="button_count">
-        </div>
+
+      <h2 class="mb-4">Partagez votre jeu préféré! </h2>
+        <div class="socialmedias">
+          <div class="fb-share-button unbouton" 
+          data-href="google.fr" 
+          data-layout="button_count"
+          size="large">
+          </div>
+          <div class="twitterbutton unbouton">
+          <a class="twitter-share-button"
+          href="https://twitter.com/intent/tweet"
+          data-size="large">Tweet</a>
+          </div>
       </div>
+
     </div>
   </section>
 
@@ -632,7 +644,8 @@
   </footer>
 
 
-
+  <!--Facebook-->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2&appId=292883004730201&autoLogAppEvents=1"></script>
   <!-- du js -->
   <script src="src/js/script.js"></script>
 
