@@ -15,6 +15,14 @@
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+      <!--Facebook API-->
+   <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="google.fr" />
+    <meta property="og:type"          content="Site internet" />
+    <meta property="og:title"         content="Mon super site" />
+    <meta property="og:description"   content="Mon portfolio personnel." />
+    <meta property="og:image"         content="google.fr" />
     <!-- Custom Fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
@@ -49,8 +57,8 @@
                         href="http://localhost:8888/arcade4/hello/app/src/php/increase_vote.php">Voter</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Avis</a>
-                </li>
+                        <a class="nav-link"href="http://localhost:8888/arcade4/hello/app/src/php/commentaires.php">Avis</a>
+                      </li>
             </ul>
         </div>
     </nav>
@@ -384,6 +392,23 @@
             </div>
         </div>
     </section>
+
+      <!--Boutons de partage du projet-->
+  <section class="content-section bg-primary text-white" id ="partages">
+        <div class="container text-center">
+    
+          <h2 class="mb-4">Partagez votre jeu préféré! </h2>
+            <div class="socialmedias">
+              <div id="fb-root"></div>
+              <div class="fb-share-button unbouton" 
+              data-href="https://www.chagrdi.com" 
+              data-layout="button"
+              size="large">
+              </div>
+          </div>
+    
+        </div>
+      </section>
     <!-- Footer -->
     <footer class="footer text-center">
         <div class="container">
@@ -394,6 +419,9 @@
     <!-- du js -->
     <script src="src/js/script.js"></script>
 
+    <!--Facebook-->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2&appId=292883004730201&autoLogAppEvents=1"></script>
+  
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
