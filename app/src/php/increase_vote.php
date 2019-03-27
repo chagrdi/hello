@@ -74,6 +74,28 @@ while($vote = $q->fetch(PDO::FETCH_ASSOC)){
     </div>
   </footer>
 
+<div class="container">
+
+<div class="row">
+<form class="col s12" action="chat.php" method="post">
+  <div class="row">
+    <div class="input-field col s6">
+      <input name="pseudo" placeholder="pseudo" id="first_name" type="text" class="validate">
+      <label for="first_name">Pseudo</label>
+    </div>
+    <input type="submit" value="login" class="waves-effect waves-light btn">
+</form>
+</div>
+
+
+<form action="chat.php" method="post">
+<textarea name="message" id="" cols="30" rows="10"></textarea>
+<input type="submit" value="envoyer">
+</form>
+
+</div>
+
+
 
   <!-- du js -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
