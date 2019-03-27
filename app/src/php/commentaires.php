@@ -19,7 +19,7 @@
 <body>
 
 <!-- Header -->
-<header class="masthead d-flex" id="pagevotes">
+<header class="masthead d-flex" id="avis">
     <div class="container text-center my-auto">
       <h1 class="mb-1">Laissez votre avis!</h1>
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#liste">Nous serons content de vous lire</a>
@@ -39,9 +39,11 @@
 
 
 
-   <form action="comments.php" method="post">
+   <form action="comments.php?=id=1" method="post">
+    <p>Pseudo</p>
     <input type="text" name="pseudo">
-    <input type="text" name="nom_famille">
+    <p>Commentaire</p>
+    <input type="text" name="commentaire">
     <input type="submit" value="ENVOYER">
 </form>
 
