@@ -349,6 +349,7 @@ h6 {
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  border-top: .5px solid black;
 }
 
 footer.footer .social-link {
@@ -559,7 +560,7 @@ ul.social-buttons li a:hover {
 }
 
 #gens {
-  background-image: url('../../../src/assets/img/arcade-night.jpg');
+  background-image: url('../../../src/assets/img/minimaliste.jpg');
 }
 
 .timeline {
