@@ -21,8 +21,8 @@
 <!-- Header -->
 <header class="masthead d-flex" id="pagevotes">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">Il est temps de voter!</h1>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#liste">Faites le bon choix</a>
+      <h1 class="mb-1">Laissez votre avis!</h1>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#liste">Nous serons content de vous lire</a>
       <a href="../../index.html" id="retour-accueil">Retour à l'accueil</a>
     </div>
     <div class="overlay"></div>
@@ -32,38 +32,19 @@
   <p id="liste"></p>
   <div class="container" id="titre-liste">
       <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Le classement</h3>
-        <h2 class="mb-5">Votez pour votre jeu préféré!</h2>
+        <h3 class="text-secondary mb-0">Espace commentaire</h3>
+        <h2 class="mb-5">Laissez votre avis</h2>
       </div>
       <div class="row no-gutters">
 
+
+
+    <form action="commentaires.php?id=" method="post">
+    <p>Votre nom : <input type="text" name="nom" /></p>
+    <p>Votre âge : <input type="text" name="age" /></p>
+    <p><input type="submit" value="OK"></p>
+    </form>
   
-  
-
-  <?php
-// Connect to database
-require('connect.php');
-
-// Request to to database (get nb_vote)
-require('request.php');
-
-/* Boucle pour tout les jeux */
-while($vote = $q->fetch(PDO::FETCH_ASSOC)){
-  /* on incrémente pour savoir qui a le plus de votes et le faire remonter dans le classement */
-  $rang++;
-  ?>
-  <div class="container text-center my-auto">
-    <div class="jeu">
-    <p id="rang"><?= $rang ?></p>
-    <p id="nomjeu"><?= $vote["slug_game"] ?></p>
-    <p><?= $vote["nb_votes"] . ' ' ?>Votes</p>
-    <?php echo "<a class='btn-vote' href='cookies.php?game=". $vote["slug_game"] . "'>Voter</a> <br>"; ?>
-    </div>
-    
-  </div>
-    
-<?php } ?>
-
 
  <!-- Footer -->
  <footer class="footer text-center" id="footer-vote">
@@ -74,24 +55,7 @@ while($vote = $q->fetch(PDO::FETCH_ASSOC)){
     </div>
   </footer>
 
-<div class="container">
 
-<div class="row">
-<form class="col s12" action="chat.php" method="post">
-  <div class="row">
-    <div class="input-field col s6">
-      <input name="pseudo" placeholder="pseudo" id="first_name" type="text" class="validate">
-      <label for="first_name">Pseudo</label>
-    </div>
-    <input type="submit" value="login" class="waves-effect waves-light btn">
-</form>
-</div>
-
-
-<form action="chat.php" method="post">
-<textarea name="message" id="" cols="30" rows="10"></textarea>
-<input type="submit" value="envoyer">
-</form>
 
 </div>
 
