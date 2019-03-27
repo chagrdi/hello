@@ -767,3 +767,8 @@ ul.social-buttons li a:hover {
   background-image: url('../../../src/assets/img/retro (2).jpg');
   background-position: center;
 }
+
+#partages {
+  margin-top: 50px;
+  background-color: #81d481 !important;
+}
