@@ -559,7 +559,7 @@ ul.social-buttons li a:hover {
 }
 
 #gens {
-  background-image: url('../../../src/assets/img/arcade-night.jpg');
+  background-image: url('../../../src/assets/img/minimaliste.jpg');
 }
 
 .timeline {
@@ -770,4 +770,13 @@ ul.social-buttons li a:hover {
 #partages {
   margin-top: 50px;
   background-color: #81d481 !important;
+}
+
+#partages .socialmedias {
+  display: flex;
+  justify-content: center;
+}
+
+#partages .unbouton {
+  margin-left: 5px;
 }

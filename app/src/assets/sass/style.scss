@@ -767,4 +767,12 @@ ul.social-buttons {
 #partages {
   margin-top : 50px;
   background-color : rgb(129, 212, 129) !important ;
+
+  .socialmedias {
+    display: flex;
+    justify-content: center;
+  }
+  .unbouton {
+    margin-left : 5px;
+  }
 }
