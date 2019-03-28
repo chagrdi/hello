@@ -38,28 +38,31 @@
       <div class="row no-gutters">
 
 
+<?php
+// Connect to database
+require('connect.php');
+// Request to to database (get nb_vote)
+require('request.php');
+?>
 
-   <form action="comments.php?=id=1" method="post">
+     <!-- jeu 3 -->
+     <form action="comments.php?=id=<?php echo $q['id'];?>" method="post">
+         <p>Vote</p>
+     <select name="champ">
+   <option value="1">jeu 1</option>
+   <option value="2">jeu 2</option>
+   <option value="3">jeu 3</option>
+</select>
     <p>Pseudo</p>
     <input type="text" name="pseudo">
     <p>Commentaire</p>
     <input type="text" name="commentaire">
     <input type="submit" value="ENVOYER">
 </form>
-
-
- <!-- Footer -->
- <footer class="footer text-center" id="footer-vote">
- <a class="btn btn-dark btn-xl js-scroll-trigger"
-            href="../../index.html">Retour à l'accueil</a>
-    <div class="container">
-      <p class="text-muted small mb-0">Copyright &copy; Notre site 2019</p>
-    </div>
-  </footer>
+ <!-- jeu 3 -->
 
 
 
-</div>
 
 
 

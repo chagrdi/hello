@@ -563,6 +563,10 @@ ul.social-buttons li a:hover {
   background-image: url('../../../src/assets/img/minimaliste.jpg');
 }
 
+#avis {
+  background-image: url('../../../src/assets/img/com.jpg');
+}
+
 .timeline {
   position: relative;
   padding: 0;
