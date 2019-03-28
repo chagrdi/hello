@@ -1,25 +1,19 @@
 <?php
+
 // Connect to database
 require('connect.php');
-// Request to to database (get nb_vote)
-require('request.php');
-
-var_dump($_POST);
-
-
-
-// Request to database (get nb_vote)
-$q = $db->prepare("SELECT * FROM comments WHERE id-game = :id");
-$q->bindParam(":game", $_GET["game"]);
-$q->execute();
-$rang = 0;
-$comments = $q->fetch(PDO::FETCH_ASSOC);
-/* Si pas de cookies on incrémente */
-
-$q = $db->query("SELECT * FROM comments");
+// Prepare request INSERT INTO table VALUES WHERE id = :id
+$q = $db->prepare("INSERT INTO comments (pseudo, content, id_game) VALUES (:pseudo, :content, :id_game)");
+// bindParam
+$q->bindParam(":id_game", $_POST["id_game"]);
+$q->bindParam(":content", $_POST["commentaire"]);
+$q->bindParam(":pseudo", $_POST["pseudo"]);
+// execute
 $q->execute();
 
-
-
-
+//var_dump($_POST);
+// header location
+/* header("Location: commentaires.php");  */
 ?>
+
+ 

@@ -41,25 +41,24 @@
 <?php
 // Connect to database
 require('connect.php');
-// Request to to database (get nb_vote)
-require('request.php');
+
 ?>
 
      <!-- jeu 3 -->
-     <form action="comments.php?=id=<?php echo $q['id'];?>" method="post">
+     <form action="comments.php" method="post">
          <p>Vote</p>
-     <select name="champ">
-   <option value="1">jeu 1</option>
-   <option value="2">jeu 2</option>
-   <option value="3">jeu 3</option>
-</select>
-    <p>Pseudo</p>
-    <input type="text" name="pseudo">
-    <p>Commentaire</p>
-    <input type="text" name="commentaire">
-    <input type="submit" value="ENVOYER">
-</form>
- <!-- jeu 3 -->
+        <select name="id_game">
+            <option value="1">jeu 1</option>
+            <option value="4">jeu 2</option>
+            <option value="5">jeu 3</option>
+        </select>
+        <p>Pseudo</p>
+        <input type="text" name="pseudo">
+        <p>Commentaire</p>
+        <textarea type="text" name="commentaire"></textarea><br>
+        <input type="submit" value="ENVOYER">
+    </form>
+    <!-- jeu 3 -->
 
 
 
