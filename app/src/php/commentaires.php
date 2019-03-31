@@ -41,24 +41,24 @@
 <?php
 // Connect to database
 require('connect.php');
+require('request.php');
 
 ?>
-
-     <!-- jeu 3 -->
-     <form action="comments.php" method="post">
-         <p>Vote</p>
-        <select name="id_game">
-            <option value="1">jeu 1</option>
-            <option value="4">jeu 2</option>
-            <option value="5">jeu 3</option>
+<div class="container text-center my-auto">
+        <div class="jeu">
+                <select name="" id="">
+                    <?php
+               while($vote = $q->fetch(PDO::FETCH_ASSOC)){
+              ?>
+            <option id="nomjeu"><?= $vote["slug_game"] ?></option>
+            <?php } ?>
         </select>
-        <p>Pseudo</p>
-        <input type="text" name="pseudo">
-        <p>Commentaire</p>
-        <textarea type="text" name="commentaire"></textarea><br>
-        <input type="submit" value="ENVOYER">
-    </form>
-    <!-- jeu 3 -->
+    </div>
+    
+  </div>
+    
+
+    
 
 
 
