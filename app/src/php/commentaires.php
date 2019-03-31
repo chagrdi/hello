@@ -44,16 +44,24 @@ require('connect.php');
 require('request.php');
 
 ?>
-<div class="container text-center my-auto">
-        <div class="jeu">
-                <select name="" id="">
+
+        
+        <form action="comments.php" method="post">
+        <p>Pseudo</p>
+        <input type="text" name="pseudo">
+        <p>Je vote pour</p>
+                <select name="id_game" id="">
                     <?php
                while($vote = $q->fetch(PDO::FETCH_ASSOC)){
               ?>
-            <option id="nomjeu"><?= $vote["slug_game"] ?></option>
+            <option><?= $vote["slug_game"] ?></option>
             <?php } ?>
         </select>
-    </div>
+        <p>Commentaire</p>
+        <textarea type="text" name="commentaire"></textarea><br>
+        <input type="submit" value="ENVOYER">
+    </form>
+    
     
   </div>
     
