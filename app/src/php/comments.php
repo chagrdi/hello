@@ -11,9 +11,8 @@ $q->bindParam(":pseudo", $_POST["pseudo"]);
 // execute
 $q->execute();
 
-var_dump($_POST);
 // header location
-/* header("Location: commentaires.php");  */
+header("Location: commentaires.php");  
 ?>
 
  

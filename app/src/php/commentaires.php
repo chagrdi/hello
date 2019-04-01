@@ -37,34 +37,82 @@
       </div>
       <div class="row no-gutters">
 
-
+</div>
 <?php
 // Connect to database
 require('connect.php');
 require('request.php');
 
 ?>
-
-        
-        <form action="comments.php" method="post">
-        <p>Pseudo</p>
-        <input type="text" name="pseudo">
-        <p>Je vote pour</p>
-                <select name="id_game" id="">
-                    <?php
-               while($vote = $q->fetch(PDO::FETCH_ASSOC)){
-              ?>
-            <option><?= $vote["slug_game"] ?></option>
-            <?php } ?>
-        </select>
-        <p>Commentaire</p>
-        <textarea type="text" name="commentaire"></textarea><br>
-        <input type="submit" value="ENVOYER">
-    </form>
-    
-    
+<!-- formulaire commentaires -->
+<form action="comments.php" method="post">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Pseudo</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mon pseudo" name="pseudo">
   </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Le jeu que je veux commenter</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="id_game">
+    <?php
+    while($vote = $q->fetch(PDO::FETCH_ASSOC)){
+        ?>
+      <option><?= $vote["slug_game"]?></option>
+      <?php } ?>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Mon commentaire</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="commentaire"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary" value="ENVOYER">Publier</button>
+</form>
     
+       
+    
+<div class="">
+    <p id="liste"></p>
+      <div class="container" id="titre-liste">
+          <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0 publicom" >Les commentaires publiés</h3>
+          </div>
+          <div class="row no-gutters">
+    
+    </div>
+</div>
+
+
+<?php 
+// Etape 2: prepare request SELECT ALL FROM VOTES
+$c = $db->prepare("SELECT * FROM comments");
+// Etape 3: execute
+$c->execute();
+$comments = $c->fetch(PDO::FETCH_ASSOC)
+?>
+<?php
+   while($comments = $c->fetch(PDO::FETCH_ASSOC)){
+              ?>
+              <div class="comment">
+                <div class="notice notice-warning">
+            <div id="pseudojeu">
+           <p>Pseudo:</p>
+           <strong><?= $comments["pseudo"]?></strong> 
+       </div>
+        
+        <div id="avisjeu">
+            <p>Un avis sur</p>
+            <strong><?= $comments["id_game"] ?></strong> 
+        </div>
+        <p id="soncom">Son commentaire :</p>
+        <strong id="com"><?= $comments["content"] ?></strong>
+         </div>
+        <?php } ?>
+        </div>
+
+
+    
+
+    
+
 
     
 
