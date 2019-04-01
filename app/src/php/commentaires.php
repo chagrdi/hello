@@ -18,6 +18,30 @@
 
 <body>
 
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index2.html">La team<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8888/arcade4/hello/app/src/php/increase_vote.php">Voter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8888/arcade4/hello/app/src/php/commentaires.php">Avis</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
 <!-- Header -->
 <header class="masthead d-flex" id="avis">
     <div class="container text-center my-auto">
@@ -94,23 +118,28 @@ $comments = $c->fetch(PDO::FETCH_ASSOC)
               <div class="comment">
                 <div class="notice notice-warning">
             <div id="pseudojeu">
-           <p>Pseudo:</p>
+           <p id="pseudop">Pseudo:</p>
            <strong><?= $comments["pseudo"]?></strong> 
        </div>
         
         <div id="avisjeu">
-            <p>Un avis sur</p>
+            <p id="avisp">Un avis sur</p>
             <strong><?= $comments["id_game"] ?></strong> 
         </div>
         <p id="soncom">Son commentaire :</p>
-        <strong id="com"><?= $comments["content"] ?></strong>
+        <p id="com">"<?= $comments["content"] ?>"</p>
          </div>
         <?php } ?>
         </div>
 
 
     
-
+ <!-- Footer -->
+ <footer class="footer text-center">
+        <div class="container">
+            <p class="text-muted small mb-0">Copyright &copy; Notre site 2019</p>
+        </div>
+    </footer>
     
 
 

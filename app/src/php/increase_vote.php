@@ -18,6 +18,30 @@
 
 <body>
 
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index2.html">La team<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8888/arcade4/hello/app/src/php/increase_vote.php">Voter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8888/arcade4/hello/app/src/php/commentaires.php">Avis</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
 <!-- Header -->
 <header class="masthead d-flex" id="pagevotes">
     <div class="container text-center my-auto">
@@ -65,16 +89,15 @@ while($vote = $q->fetch(PDO::FETCH_ASSOC)){
 <?php } ?>
 
 
- <!-- Footer -->
- <footer class="footer text-center" id="footer-vote">
- <a class="btn btn-dark btn-xl js-scroll-trigger"
-            href="../../index.html">Retour à l'accueil</a>
-    <div class="container">
-      <p class="text-muted small mb-0">Copyright &copy; Notre site 2019</p>
-    </div>
-  </footer>
 
-<div class="container">
+
+<!-- Footer -->
+<footer class="footer text-center" id="footervote">
+        <div class="container">
+            <p class="text-muted small mb-0">Copyright &copy; Notre site 2019</p>
+        </div>
+</footer>
+
 
 
 

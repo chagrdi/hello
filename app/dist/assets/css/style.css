@@ -823,3 +823,13 @@ ul.social-buttons li a:hover {
   font-style: italic;
   margin-bottom: 0;
 }
+
+#avisp,
+#pseudop {
+  font-size: 13px;
+  font-style: italic;
+}
+
+#footervote {
+  margin: auto;
+}
