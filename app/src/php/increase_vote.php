@@ -30,10 +30,10 @@
                     <a class="nav-link" href="../../index.html">Accueil</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="../../index2.html">La team<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../../index2.html">La team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:8888/arcade4/hello/app/src/php/increase_vote.php">Voter</a>
+                    <a class="nav-link" href="http://localhost:8888/arcade4/hello/app/src/php/increase_vote.php"><span class="sr-only">(current)</span>Voter</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="http://localhost:8888/arcade4/hello/app/src/php/commentaires.php">Avis</a>
