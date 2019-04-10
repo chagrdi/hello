@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,7 +65,6 @@
 // Connect to database
 require('connect.php');
 require('request.php');
-
 ?>
 <!-- formulaire commentaires -->
 <form action="comments.php" method="post">
@@ -163,8 +161,5 @@ $comments = $c->fetch(PDO::FETCH_ASSOC)
 </body>
 
 </html>
-
-
-
 
 
